@@ -288,33 +288,19 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--txt);font
 <script>
 const SERVER = "wss://serveur-6l39.onrender.com";
 
-const PROXY = "https://corsproxy.io/?url=";
-const MI = "https://www.myinstants.com/media/sounds/";
-const p = s => PROXY + encodeURIComponent(MI + s);
-
 const SOUNDS = [
-  {id:"airhorn",  e:"📯", l:"Air Horn",       url:p("air-horn-club-sample.mp3")},
-  {id:"bruh",     e:"😐", l:"Bruh",           url:p("bruh.mp3")},
-  {id:"vine",     e:"💥", l:"Vine Boom",      url:p("vine-boom.mp3")},
-  {id:"nyan",     e:"🌈", l:"Nyan Cat",       url:p("nyan-cat.mp3")},
-  {id:"error",    e:"💻", l:"Win Error",      url:p("erro.mp3")},
-  {id:"among",    e:"🔴", l:"Among Us",       url:p("among-us-role-reveal.mp3")},
-  {id:"wow",      e:"😮", l:"WOW",            url:p("wow.mp3")},
-  {id:"wasted",   e:"💀", l:"Wasted",         url:p("wasted-gta.mp3")},
-  {id:"damage",   e:"😢", l:"Emot. DMG",      url:p("emotional-damage.mp3")},
-  {id:"tuturu",   e:"📱", l:"Tuturu",         url:p("tuturu.mp3")},
-  {id:"alert",    e:"❗", l:"MGS Alert",      url:p("metal-gear-solid-alert.mp3")},
-  {id:"coffin",   e:"⚰️", l:"Coffin Dance",   url:p("coffin-dance-meme.mp3")},
-  {id:"mygo",     e:"🐐", l:"My Goat",        url:p("oh-my-god-40.mp3")},
-  {id:"goodday",  e:"🌅", l:"Good day sir",   url:p("good-day-sir.mp3")},
-  {id:"nooo",     e:"😱", l:"NOOO",           url:p("noooooooo.mp3")},
-  {id:"illumin",  e:"🔺", l:"Illuminati",     url:p("illuminati-confirmed-1.mp3")},
-  {id:"trombone", e:"🎺", l:"Sad Trombone",   url:p("sadtrombone.mp3")},
-  {id:"crickets", e:"🦗", l:"Crickets",       url:p("crickets-chirping.mp3")},
-  {id:"rizz",     e:"😎", l:"Rizz",           url:p("ohio-rizz-theme.mp3")},
-  {id:"fart",     e:"💨", l:"Fart",           url:p("fart-with-reverb.mp3")},
-  {id:"mlg",      e:"🎯", l:"MLG Horn",       url:p("mlg-airhorn.mp3")},
-  {id:"surprise", e:"🎉", l:"Surprise",       url:p("surprise-sound.mp3")},
+  {id:"airhorn", e:"📯", l:"Air Horn",      url:"https://www.myinstants.com/media/sounds/air-horn-club-sample.mp3"},
+  {id:"bruh",    e:"😐", l:"Bruh",          url:"https://www.myinstants.com/media/sounds/bruh.mp3"},
+  {id:"vine",    e:"💥", l:"Vine Boom",     url:"https://www.myinstants.com/media/sounds/vine-boom.mp3"},
+  {id:"nyan",    e:"🌈", l:"Nyan Cat",      url:"https://www.myinstants.com/media/sounds/nyan-cat.mp3"},
+  {id:"error",   e:"💻", l:"Win Error",     url:"https://www.myinstants.com/media/sounds/erro.mp3"},
+  {id:"among",   e:"🔴", l:"Among Us",      url:"https://www.myinstants.com/media/sounds/among-us-role-reveal.mp3"},
+  {id:"wow",     e:"😮", l:"WOW",           url:"https://www.myinstants.com/media/sounds/wow.mp3"},
+  {id:"wasted",  e:"💀", l:"Wasted",        url:"https://www.myinstants.com/media/sounds/wasted-gta.mp3"},
+  {id:"damage",  e:"😢", l:"Emot. DMG",     url:"https://www.myinstants.com/media/sounds/emotional-damage.mp3"},
+  {id:"tuturu",  e:"📱", l:"Tuturu",        url:"https://www.myinstants.com/media/sounds/tuturu.mp3"},
+  {id:"alert",   e:"❗", l:"MGS Alert",     url:"https://www.myinstants.com/media/sounds/metal-gear-solid-alert.mp3"},
+  {id:"coffin",  e:"⚰️", l:"Coffin Dance",  url:"https://www.myinstants.com/media/sounds/coffin-dance-meme.mp3"},
 ];
 const AVTS = ["😸","🐶","🦊","🐼","🐸","🦁","🐯","🦝","🐧","🦄","🐲","👾","🤖","👻","🎃","🔥","💎","⚡"];
 
